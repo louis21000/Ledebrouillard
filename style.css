@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Stardos+Stencil:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  cursor: none;
+}
+
+body,
+input,
+button {
+  font-size: 22pt;
+  font-family: "Share Tech", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+h1 {
+  font-family: "Stardos Stencil", system-ui;
+}
+.videopresentation {
+  margin-top: 60px;
+  width: 100%;
+  height: min-content;
+  overflow: visible;
+}
+#videoppt {
+  width: 50%;
+  opacity: 80%;
+}
+.maintitle > h1 {
+  font-size: 10vw;
+}
+.maintitle {
+  margin-top: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  position: absolute;
+  padding: 40px;
+  z-index: 4;
+}
+.videopresentation {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh;
+  margin-top: -300px;
+  z-index: 5;
+  animation: appear 1s ease forwards;
+}
+.caption {
+  font-size: 15pt;
+  position: absolute;
+  transform: translateY(30vh);
+  display: flex;
+  justify-content: space-between;
+  font-family: "Share Tech", sans-serif;
+}
+.caption p {
+  max-width: 20%;
+  margin: 30px;
+}
+.caption p:first-child {
+  text-align: end;
+  animation: text1 2s ease;
+}
+.caption p:last-child {
+  animation: text2 2s ease;
+}
+@keyframes text1 {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes text2 {
+  from {
+    transform: translateX(300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes appear {
+  from {
+    transform: translate(0, -300px);
+  }
+  to {
+    margin-top: 5vh;
+  }
+}
+.next {
+  transform: translateY(65vh);
+}
+.littletitle {
+  padding: 30px;
+  margin-top: 30px;
+}
+.littletitle h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.clc {
+  max-width: 40%;
+  font-size: 20pt;
+  text-align: end;
+}
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slide1 img {
+  width: 40vw;
+  margin-right: 7%;
+}
+.slide2 img {
+  width: 15vw;
+  margin-left: 13%;
+}
+.slide3 img {
+  width: 40vw;
+  margin-right: 7%;
+}
+.txt {
+  display: flex;
+  justify-content: center;
+  font-size: 20pt;
+  flex-direction: column;
+  height: 500px;
+}
+.column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 10%;
+}
+.imglogo img {
+  width: 100px;
+  border-radius: 12px;
+}
+.imglogo {
+  margin-bottom: 30px;
+}
+.eolien img {
+  width: 30vw;
+}
+.solar img {
+  width: 30vw;
+}
+/*.soluces {
+  display: flex;
+  justify-content: space-evenly;
+}*/
+h2 {
+  font-family: "Stardos Stencil", system-ui;
+  text-align: center;
+}
+.column2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.soluces {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+}
+.column2 p {
+  text-align: start;
+}
+.column2 > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  margin-top: 50px;
+}
+.tableau {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.tableau > img {
+  width: 1000px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.margintop {
+  margin-top: 50px;
+}
+.textsoluces {
+  padding: 100px;
+}
+
+.materiaux {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.mat {
+  background-color: #fff;
+  color: black;
+  border-radius: 100%;
+  padding: 4vw;
+}
+.machine {
+  width: 35vw;
+  border-radius: 15px;
+}
+.align {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.schema {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  margin-top: 20px;
+  transition: transform 1s ease-out;
+  will-change: transform;
+}
+
+img.scroll-up {
+  transform: translateY(-20px);
+}
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  background-color: white;
+  mix-blend-mode: difference; /* Rend le curseur visible peu importe la couleur du fond */
+  transition: transform 0.05s ease;
+}
+.mat {
+  cursor: pointer;
+}
+.mat.active {
+  transform: scale(10, 10);
+  border-radius: 0;
+  transition: border-radius 0.5s ease-in;
+}
